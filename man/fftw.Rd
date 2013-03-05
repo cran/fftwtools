@@ -33,11 +33,12 @@
 \description{
   These functions compute the FFT using the FFTW3 libraries.
   Use fftw_r2c(x, HermConj=0) for real to complex fft. This will
-  return the result without the Hermitian conjugate. This follows the R
+  return the result without the redundant complex conjugate. This follows the R
   convention for returning the unscaled inverse of the FFT. The function
   fftw_c2r(res, HermConj=0, n=length(x)) will invert the FFT
-  from the result not containing the Hermitian conjugate. You must
-  specify, n, the dimension of the original data--length--if the Hermitian conjugate is not included. 
+  from the result not containing the redundant complex conjugate. You must
+  specify, n, the dimension of the original data--length--if the
+  redundant complex conjugate is not included. 
 
 }
 \usage{
@@ -52,12 +53,12 @@ fftw_c2r(data, HermConj=1, n=NULL)
   \item{inverse}{(integer) 1 or 0 indicating if inverse FFT is
     preformed. The return follows the format of the R FFT commands--the
     output is not scaled.}
-  \item{HermConj}{(integer) 1 or 0 indicating if either Hermitian
+  \item{HermConj}{(integer) 1 or 0 indicating if either "Hermitian" redundant 
     conjugate should be returned, or that the complex to real data
-    includes the Hermitian
+    includes the "Hermitian" redundant
     conjugate.}
   \item{n}{(integer) column length of the original data set. This is required when using
-    the inverse complex to real FFT without providing the Hermitian
+    the inverse complex to real FFT without providing the "Hermitian" redundant
     conjugate.} 
 }
 \author{Karim Rahim}

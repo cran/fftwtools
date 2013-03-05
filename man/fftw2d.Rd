@@ -32,10 +32,10 @@
 \description{
   Computes two-dimensional FFT on a matrix using the FFTW3 libraries.
   Use fftw_r2c_2d(x, HermConj=0) for real to complex FFT. This will
-  return the result without the Hermitian conjugate. These functions follow the R
+  return the result without the "Hermitian" redundancy. These functions follow the R
   convention when returning the inverse of the FFT. For the two-dimension
-  fft, the inverse is currently requires the entire matrix, with the
-  Hermitian to be computed.
+  fft, the inverse is currently requires the entire matrix, including the
+  redundant complex conjugate.
 }
 \usage{
 fftw2d(data, inverse=0, HermConj=1)
@@ -47,7 +47,7 @@ fftw_c2c_2d(data, inverse=0)
   \item{inverse}{(integer) 1 or 0 indicating if inverse FFT is
     preformed. The return follows the format of the R FFT commands--the
     output is not scaled.}
-  \item{HermConj}{(integer) 1 or 0 indicating if either Hermitian
+  \item{HermConj}{(integer) 1 or 0 indicating if either "Hermitian" redundant
     conjugate should be returned.}
 }
 \author{Karim Rahim}

@@ -33,12 +33,12 @@
 \description{
   This will compute the FFT of each column of a matrix using the FFTW3 libraries.
   Use mvfftw_r2c(x, HermConj=0) for real to complex fft. This will
-  return the result without the Hermitian conjugate. This follows the R
+  return the result without the redundant complex conjugate. This follows the R
   convention for returning the unscaled inverse of the FFT. The function
   mvfftw_c2r(res, HermConj=0, n=dim(x)[1]) will invert the FFT
-  from the result not containing the Hermitian conjugate. You must
+  from the result not containing the "Hermitian" redundant conjugate. You must
   specify, n, the column dimension of the original data--the column
-  length of the original data--if the Hermitian conjugate is not included. 
+  length of the original data--if the redundant complex conjugate is not included. 
 
 }
 \usage{
@@ -53,12 +53,12 @@ mvfftw_c2r(data, HermConj=1, n=NULL, fftplanopt=0)
   \item{inverse}{(integer) 1 or 0 indicating if inverse fft is
     preformed. The return follows the format of the R FFT commands. The
     result is not scaled.}
-  \item{HermConj}{(integer) 1 or 0 indicating if either Hermitian
+  \item{HermConj}{(integer) 1 or 0 indicating if either "Hermitian" redundant
     conjugate should be returned, or that the complex to real data
-    includes the Hermitian
+    includes the "Hermitian" redundant
     conjugate.}
   \item{n}{(integer) column length of the original data set, when using
-    the inverse coplex to real fft without providing the Hermitian
+    the inverse coplex to real fft without providing the "Hermitian" redundant
     conjugate.}
   \item{fftplanopt}{(integer) 0 or 1 specifying the flag passed to
     FFTW. 0 indicates the flag FFTW_ESTIMATE is used, and 1 indicates
