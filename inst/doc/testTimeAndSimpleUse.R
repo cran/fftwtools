@@ -14,10 +14,9 @@ fftwtools1 <- packageDescription("fftwtools")
 
 library("fftwtools")
 
-## we try power of 2 but we can try other values
-## we do ffts of 2^20 points
-
-## reduced to 2^8 for package distribution.
+## We increment by powers of 2, but one can use other incrementes
+## We choose fftlength = 2^20, but
+## **this was reduced to 2^8 for the vignette distribution.**
 fftLength <- 2^8
 
 set.seed(10)
@@ -25,15 +24,15 @@ set.seed(10)
 g <- rnorm(fftLength)
 
 
-##timing # Start the clock!
+##Start the clock
 ptm <- proc.time()
 
-# Loop through 
+## Loop through 
 for (i in 1:100){
     fft(g)
 }
 
-# Stop the clock
+## Stop the clock
 proc.time() - ptm
 
 
@@ -57,15 +56,15 @@ proc.time() - ptm
 ###################################################
 ### code chunk number 4: <timing3
 ###################################################
-##timing # Start the clock!
+## Start the clock!
 ptm <- proc.time()
 
-# Loop through 
+## Loop through 
 for (i in 1:100){
     fftw(g, HermConj=FALSE)
 }
 
-# Stop the clock
+## Stop the clock
 proc.time() - ptm
 
 
