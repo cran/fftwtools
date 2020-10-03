@@ -1,11 +1,11 @@
-87b947f8f4e798bd32c53f8286dbceed *DESCRIPTION
+a6fadd281725fd578d4ff9dcf0727f20 *DESCRIPTION
 ee12db3d1f4779d421a850a8e0dbca46 *NAMESPACE
 01772cca899e7e3dceaa1387ade6fee1 *R/fftwtools.R
-e877e948a7cd9edd3b89d334e4c1a659 *build/vignette.rds
+1291f7ca55f00aff9427f2290e3648d1 *build/vignette.rds
 3e04ce46e57883437e1918cfc1385cbe *configure.ac
-f62783849dc606d9afe3f5386de3a8a7 *inst/doc/testTimeAndSimpleUse.R
+8129170e1bd97b1932d2f25d9167a3cc *inst/doc/testTimeAndSimpleUse.R
 25fc2522f2c2e411f178cfb997799d65 *inst/doc/testTimeAndSimpleUse.Rnw
-a51bef0dd3cd1e11842640e4895437d4 *inst/doc/testTimeAndSimpleUse.pdf
+eb92c5647ece267ff72ffcac143b6993 *inst/doc/testTimeAndSimpleUse.pdf
 bc3f7c554e70ad7cb85552bf81856e9f *man/fftw.Rd
 692f71800f02687fff5d99e4d237c508 *man/fftw2d.Rd
 33fdd77263f8d69c628964ef8a7c3bda *man/mvfftw.Rd
