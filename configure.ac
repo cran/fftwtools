@@ -44,3 +44,4 @@ AC_SUBST(CXXFLAGS)
 AC_SUBST(LIBS)
 
 AC_OUTPUT(src/Makevars)
+
