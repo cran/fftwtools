@@ -1,5 +1,5 @@
 Package: fftwtools
-Version: 0.9-10
+Version: 0.9-11
 Title: Wrapper for 'FFTW3' Includes: One-Dimensional, Two-Dimensional,
         Three-Dimensional, and Multivariate Transforms
 Author: Karim Rahim <karim.rahim@queensu.ca>
@@ -12,6 +12,6 @@ License: GPL (>= 2)
 ByteCompile: true
 URL: https://github.com/krahim/fftwtools
 NeedsCompilation: yes
-Packaged: 2021-02-22 01:40:23 UTC; karim
+Packaged: 2021-02-27 23:01:27 UTC; karim
 Repository: CRAN
-Date/Publication: 2021-02-22 16:20:05 UTC
+Date/Publication: 2021-03-01 14:10:02 UTC
